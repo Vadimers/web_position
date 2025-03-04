@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклади з Normalize.css</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Додаткові стилі для експериментів */
+        .block-example {
+            border: 2px solid #000;
+            padding: 15px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+        .inline-example {
+            border: 1px solid #00f;
+            padding: 5px;
+            background-color: #e0e0ff;
+        }
+        .flex-example {
+            display: flex;
+            border: 2px dashed #f00;
+            padding: 10px;
+            margin: 10px;
+            background-color: #ffe0e0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Приклади з Normalize.css</h1>
+        <nav>
+            <a href="page1.html">Посилання</a> |
+            <a href="page2.html">Блочні/Інлайн</a> |
+            <a href="page3.html">Нормалізація</a> |
+            <a href="page4.html">Властивості</a> |
+            <a href="page5.html">Float/Clear</a> |
+            <a href="page6.html">Overflow</a> |
+            <a href="page7.html">Позиціонування</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Блокові елементи (&lt;div&gt;)</h2>
+        <div class="block-example">Це блоковий елемент 1</div>
+        <div class="block-example" style="width: 300px;">Це блоковий елемент 2 з фіксованою шириною</div>
+        <div class="block-example" style="text-align: center;">Це блоковий елемент 3 з вирівнюванням</div>
+
+        <h2>Інлайн елементи (&lt;span&gt;)</h2>
+        <p>Текст з <span class="inline-example">вбудованим інлайновим елементом 1</span> всередині.</p>
+        <p>Інший текст з <span class="inline-example" style="color: #0066cc;">інлайновим елементом 2</span> і кольором.</p>
+        <p>Останній приклад: <span class="inline-example" style="font-weight: bold;">інлайновий елемент 3</span>.</p>
+
+        <h2>Експеримент з <code>display: flex</code></h2>
+        <div class="flex-example">
+            <div style="margin: 5px;">Елемент 1</div>
+            <div style="margin: 5px;">Елемент 2</div>
+            <div style="margin: 5px;">Елемент 3</div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <p>© 2025 Мій навчальний сайт</p>
+    </footer>
+</body>
+</html>

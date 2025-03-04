@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Властивості</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Додаткові стилі для демонстрації */
+        .display-example {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px;
+        }
+        .box-sizing-example {
+            border: 2px solid #f00;
+            padding: 15px;
+            margin: 5px;
+        }
+        /* Кольори для display прикладів */
+        .block-example { background-color: #a3e4d7; color: #333; }
+        .inline-example { background-color: #f7cac9; color: #333; }
+        .inline-block-example { background-color: #f4e1d2; color: #333; }
+        .flex-example { background-color: #d5e8d4; color: #333; }
+        .grid-example { background-color: #e8c3d3; color: #333; }
+        /* Кольори для box-sizing прикладів */
+        .content-box-1 { background-color: #b3cde0; color: #333; }
+        .content-box-2 { background-color: #cce0b3; color: #333; }
+        .border-box-1 { background-color: #e0b3cc; color: #333; }
+        .border-box-2 { background-color: #d3b8e0; color: #333; }
+    </style>
 </head>
 <body>
     <header>
@@ -20,9 +44,34 @@
         </nav>
     </header>
     <main>
-        <div style="display: block; border: 1px solid #000; width: 100px; height: 100px;">Block</div>
-        <div style="display: inline; border: 1px solid #f00; width: 100px; height: 100px;">Inline (width ignored)</div>
-        <p>Експериментуйте з <code>display</code> (block, inline, flex) та <code>box-sizing</code> для зміни розмірів.</p>
+        <h2>Експерименти з властивістю <code>display</code></h2>
+        <div class="display-example block-example" style="display: block; width: 100px; height: 100px;">Block (повна ширина)</div>
+        <div class="display-example inline-example" style="display: inline; width: 100px; height: 100px;">Inline (ширина ігнорується)</div>
+        <div class="display-example inline-block-example" style="display: inline-block; width: 100px; height: 100px;">Inline-block (ширина враховується)</div>
+        <div class="display-example flex-example" style="display: flex; width: 300px; height: 100px;">
+            <span style="margin: 5px;">Елемент 1</span>
+            <span style="margin: 5px;">Елемент 2</span>
+        </div>
+        <div class="display-example grid-example" style="display: grid; width: 300px; height: 150px; grid-template-columns: 1fr 1fr;">
+            <span style="margin: 5px;">Елемент 1</span>
+            <span style="margin: 5px;">Елемент 2</span>
+        </div>
+
+        <h2>Експерименти з властивістю <code>box-sizing</code></h2>
+        <div class="box-sizing-example content-box-1" style="box-sizing: content-box; width: 200px; height: 100px;">
+            Content-box (ширина/висота без padding і border)
+        </div>
+        <div class="box-sizing-example border-box-1" style="box-sizing: border-box; width: 200px; height: 100px;">
+            Border-box (ширина/висота включає padding і border)
+        </div>
+        <div class="box-sizing-example content-box-2" style="box-sizing: content-box; width: 200px; height: 100px; padding: 20px;">
+            Content-box з padding (збільшує розмір)
+        </div>
+        <div class="box-sizing-example border-box-2" style="box-sizing: border-box; width: 200px; height: 100px; padding: 20px;">
+            Border-box з padding (розмір залишається фіксованим)
+        </div>
+
+        <p>Експериментуйте з <code>display</code> (block, inline, flex, inline-block, grid) та <code>box-sizing</code> (content-box, border-box) для зміни розмірів і відображення елементів.</p>
     </main>
     <footer>
         <p>© 2025 Мій навчальний сайт</p>

@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Теги <div> та <span></title>
+    <title>Приклади Використання <div> та <span></title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Додатковий CSS для видалення рамки iframe */
+        iframe {
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Теги "&lt;div&gt;" та "&lt;span&gt;"</h1>
+        <h1>Приклади Використання &lt;div&gt; та &lt;span&gt;</h1>
         <nav>
             <a href="page1.html">Посилання</a> |
             <a href="page2.html">Блочні/Інлайн</a> |
@@ -20,12 +26,43 @@
         </nav>
     </header>
     <main>
-        <div style="border: 1px solid #000; padding: 10px;">Це блоковий елемент</div>
-        <span style="border: 1px solid #f00; padding: 5px;">Це інлайн елемент</span>
-        <p>Експериментуйте з відображенням цих елементів, додаючи стилі.</p>
+        <h2>Приклади з &lt;div&gt; (блокові елементи)</h2>
+        <div style="border: 1px solid #000; padding: 15px; margin: 10px; background-color: #f9f9f9;">
+            Це приклад блокового елемента &lt;div&gt;. Він займає всю доступну ширину і починається з нової строки.
+        </div>
+        <div style="border: 1px solid #00f; padding: 10px; margin: 10px; background-color: #e0e0ff; width: 300px;">
+            Цей &lt;div&gt; має фіксовану ширину 300px і синю рамку.
+        </div>
+        <div style="border: 1px dashed #f00; padding: 10px; margin: 10px; background-color: #ffe0e0; text-align: center;">
+            Цей &lt;div&gt; використовує пунктирну червону рамку і вирівнювання тексту по центру.
+        </div>
+
+        <h2>Приклади з &lt;span&gt; (інлайн елементи)</h2>
+        <p>Текстовий абзац з <span style="border: 1px solid #000; padding: 5px; background-color: #f0f0f0;">вбудованим &lt;span&gt;</span>, який не впливає на розмір рядка.</p>
+        <p>Інший абзац з <span style="border: 1px solid #00f; padding: 5px; color: #0066cc;">синім &lt;span&gt;</span> і зміненим кольором тексту.</p>
+        <p>Останній приклад: <span style="border: 1px dotted #f00; padding: 5px; font-weight: bold;">жирний &lt;span&gt;</span> з пунктирною рамкою.</p>
+
+        <h2>Комбінація &lt;div&gt; і &lt;span&gt;</h2>
+        <div style="border: 1px solid #333; padding: 15px; margin: 10px; background-color: #f0f0f0;">
+            Блоковий контейнер &lt;div&gt; містить:
+            <span style="border: 1px solid #f00; padding: 5px; background-color: #ffcccc;">вбудований &lt;span&gt;</span>
+            і ще один <span style="border: 1px solid #00f; padding: 5px; color: #0066cc;">синій &lt;span&gt;</span>.
+        </div>
+
+        <h2>Відео з YouTube</h2>
+        <div style="margin: 20px 0; text-align: center;">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/LoG39l2AUho?si=lqeuEn2R5npJE2vo"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        
     </main>
     <footer>
         <p>© 2025 Мій навчальний сайт</p>
     </footer>
+   
 </body>
 </html>
