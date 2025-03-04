@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Позиціонування</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Додаткові стилі для демонстрації */
+        .position-example {
+            border: 1px solid #000;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            color: #333;
+            width: 200px;
+            text-align: center;
+        }
+        /* Різні кольори для позиціонування */
+        .fixed { background-color: #a3e4d7; } /* Світло-зелений */
+        .sticky { background-color: #f7cac9; } /* Світло-рожевий */
+        /* Стиль для main */
+        main {
+            width: 80%;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,9 +41,33 @@
         </nav>
     </header>
     <main>
-        <div style="position: fixed; bottom: 10px; right: 10px; border: 1px solid #000; padding: 10px;">Fixed</div>
-        <div style="position: sticky; top: 10px; border: 1px solid #f00; padding: 10px;">Sticky</div>
-        <p>Порівняйте <code>fixed</code> (фіксоване до вікна) та <code>sticky</code> (липке до прокрутки).</p>
+        <h2>Експерименти з властивістю <code>position</code></h2>
+        
+       
+        <div class="position-example fixed" style="position: fixed; top: 10px; left: 10px;">
+            <p>Цей елемент має position: fixed. Він залишається фіксованим у верхньому лівому куті вікна під час прокрутки. Спробуйте прокрутити сторінку, щоб побачити, як він не рухається разом із вмістом!</p>
+        </div>
+
+        <div class="position-example fixed" style="position: fixed; bottom: 10px; right: 10px;">
+            <p>Цей елемент також fixed, але розташований у нижньому правому куті. Він завжди видимий, незалежно від прокрутки. Це корисно для кнопок чи панелей навігації.</p>
+        </div>
+
+        
+        <div class="position-example sticky" style="position: sticky; top: 20px;">
+            <p>Цей елемент має position: sticky. Він липкий і залишається нагорі при прокрутці, коли досягає верхньої межі 20px. Спробуйте прокрутити, щоб побачити, як він "прилипає" до верху!</p>
+        </div>
+
+        <div class="position-example sticky" style="position: sticky; top: 80px;">
+            <p>Цей елемент sticky з верхньою межею 80px. Він починає "липнути" пізніше, ніж попередній. Прокрутіть, щоб порівняти поведінку з іншими елементами.</p>
+        </div>
+
+        <!-- Додатковий вміст для прокрутки -->
+        <div style="height: 800px; background-color: #f0f0f0; margin: 20px 0;">
+            <p>Цей блок додано для створення довгої сторінки, щоб протестувати позиціонування під час прокрутки. Прокрутіть униз, щоб побачити, як fixed і sticky елементи реагують на рух вмісту.</p>
+            <p>Додайте більше тексту тут: Українська мова робить приклади цікавішими! Спробуйте експериментувати з різними значеннями top, left, bottom, right для fixed і sticky, щоб зрозуміти їхню поведінку.</p>
+        </div>
+
+       
     </main>
     <footer>
         <p>© 2025 Мій навчальний сайт</p>
