@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float та Clear</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+
 <body>
     <header>
         <h1>Float та Clear</h1>
@@ -20,10 +20,41 @@
         </nav>
     </header>
     <main>
-        <div style="float: left; border: 1px solid #000; width: 100px; height: 100px;">Float Left</div>
-        <div style="float: left; border: 1px solid #f00; width: 100px; height: 100px;">Float Left</div>
-        <div style="clear: both; border: 1px solid #00f; height: 50px;">Clear Both</div>
-        <p>Використовуйте <code>float</code> для обтікання та <code>clear</code> для контролю.</p>
+        <h3>Квіти</h3>
+        <div class="clearfix">
+            <img src="./img/10.jpg"  class="picture fl" alt="red flowers">
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptate et velit fugiat beatae itaque esse quibusdam inventore quo distinctio debitis reiciendis, fuga placeat cum similique dolor. Et, voluptas veniam?</p>
+        <p>Corrupti, modi. Voluptas necessitatibus libero, enim nam minima beatae atque magnam error deserunt nulla saepe, fuga a corporis tenetur ut, culpa ratione iusto quisquam doloremque. Aspernatur in perspiciatis ea dolores.</p>
+    
+        <!-- Розкоментуй блок нижче і задокументуй у стилях клас .clearfix і побачиш баг, який часто виникає у роботі з Float-ми. Саме clearfix хаком лікуються такі баги флексів-->
+    
+        <!-- <div class="clearfix">
+            <img src="./img/12.jpg" class="picture fl clearfix" alt="sunset">
+        </div> -->
+    
+        <p>Magnam ullam veniam enim cupiditate minus iusto ut non, eveniet illum amet impedit consequuntur voluptates, quidem cum iure. Odio alias iste minus odit quo suscipit? Perferendis dolores officia cum distinctio.</p>
+        
+        <div class="clearfix"> 
+            
+            <h3>Узбережжя</h3>
+            <img src="./img/11.jpg"  class="picture fr" alt="west coast">
+        </div>
+        <p>Ducimus quas, iusto minima non quo eum itaque ipsum molestiae quibusdam voluptas voluptate! Nostrum libero quae laudantium blanditiis earum incidunt in, nisi sapiente provident illum, numquam obcaecati, ab explicabo adipisci.</p>
+        <p>Necessitatibus ullam assumenda facere, mollitia eaque atque soluta inventore impedit eveniet placeat eos sunt. Sed iste, obcaecati rerum voluptates vitae ipsa, deleniti quia a odio culpa itaque eum ducimus numquam.</p>
+        <p>Sed odio ipsam ducimus tempore magni. Voluptatibus id non possimus natus similique. Quaerat vel deleniti rerum consequuntur commodi tempora vitae reiciendis architecto nostrum magnam itaque, necessitatibus debitis earum sint dolorum!</p>
+        
+        <div class="clearfix">
+            <h3>Озеро</h3>
+            <img src="./img/12.jpg"  class="picture fl" alt="sunset">
+        </div>
+        <p>Vero eum consectetur harum labore dolorum quaerat, pariatur odit maiores voluptatibus ratione dicta quas adipisci aspernatur voluptas a, voluptatem esse, nesciunt repellendus repellat necessitatibus expedita commodi amet cupiditate consequuntur! Ullam!</p>
+        <p>Dolores nobis adipisci, facilis minus sint consequatur laborum libero voluptates similique! Similique quia sequi, culpa dolore veritatis voluptatibus nihil ipsam quod vitae a. Esse, exercitationem. Fuga expedita ducimus vitae excepturi.</p>
+        <p>Repellat deserunt voluptates officiis ex impedit. Cum inventore numquam expedita odit distinctio hic provident nesciunt, error aliquid voluptas, impedit aut ut, voluptatem quidem ea facilis sed. Impedit magnam neque sint.</p>
+        <p>Quaerat incidunt fugiat blanditiis quos quis voluptates quas officiis quasi pariatur quisquam ducimus qui, fugit dignissimos eaque tenetur et repellendus excepturi iusto, voluptate commodi alias. Sint nostrum esse porro fugit!</p>
+        <p>Quaerat incidunt fugiat blanditiis quos quis voluptates quas officiis quasi pariatur quisquam ducimus qui, fugit dignissimos eaque tenetur et repellendus excepturi iusto, voluptate commodi alias. Sint nostrum esse porro fugit!</p>
+        <br>
+        <br>
     </main>
     <footer>
         <p>© 2025 Мій навчальний сайт</p>
