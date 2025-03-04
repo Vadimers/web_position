@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Додаткові стилі для демонстрації */
+        .overflow-container {
+            border: 1px solid #000;
+            width: 200px;
+            height: 100px;
+            margin: 50px 20px;
+            /* Вертикальний відступ 50px, горизонтальний 20px для роздiлу в ряд */
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .overflow-content {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Різні кольори для контейнерів */
+        .visible {
+            background-color: #a3e4d7;
+        }
+
+        /* Світло-зелений */
+        .hidden {
+            background-color: #f7cac9;
+        }
+
+        /* Світло-рожевий */
+        .scroll {
+            background-color: #d5e8d4;
+        }
+
+        /* Світло-салатовий */
+        .auto {
+            background-color: #e8c3d3;
+        }
+
+        /* Світло-фіолетовий */
+        /* Стиль для main для розміщення контейнерів у ряд */
+        main {
+            width: 90%;
+            /* Збільшено для розміщення всіх контейнерів у ряд */
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            /* Дозволяє перенесення на новий ряд при малому екрані */
+            justify-content: space-between;
+            /* Розподілить контейнери з проміжками */
+            overflow: hidden;
+            /* Очищає float для контейнера */
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Overflow</h1>
@@ -20,13 +74,50 @@
         </nav>
     </header>
     <main>
-        <div style="overflow: scroll; border: 1px solid #000; width: 150px; height: 100px;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <p>Експериментуйте з <code>overflow: auto, hidden, scroll, visible</code>.</p>
+        <h1>Експерименти з властивістю <code>overflow</code></h1>
+    
+            <div class="overflow-container visible" style="overflow: visible;">
+                <div class="overflow-content">
+                    <p>Цей текст демонструє властивість overflow: visible. Вміст виходить за межі контейнера без
+                        будь-яких обмежень. Додамо більше тексту: Українська мова додає унікальності прикладам!
+                        Спробуйте змінити розміри контейнера або додати ще текст, щоб побачити, як вміст розширюється за
+                        межі.</p>
+                </div>
+            </div>
+
+            <div class="overflow-container hidden" style="overflow: hidden;">
+                <div class="overflow-content">
+                    <p>Цей текст демонструє overflow: hidden. Вміст, що виходить за межі, обрізається. Додамо текст:
+                        Українська мова робить приклади зрозумілішими. Спробуйте збільшити кількість тексту або зменшити
+                        розмір контейнера, щоб побачити, як приховується надлишок.</p>
+                </div>
+            </div>
+
+            <div class="overflow-container scroll" style="overflow: scroll;">
+                <div class="overflow-content">
+                    <p>Цей текст демонструє overflow: scroll. Прокрутка завжди доступна для перегляду вмісту. Додамо
+                        текст: Українська мова додає локальний колорит! Спробуйте додати ще абзаців або змінити розміри,
+                        щоб перевірити поведінку смуг прокрутки.</p>
+                    <p>Додатковий текст: Тут ми можемо додавати більше деталей про дизайн чи функціональність, щоб краще
+                        зрозуміти, як працює прокрутка.</p>
+                </div>
+            </div>
+
+            <div class="overflow-container auto" style="overflow: auto;">
+                <div class="overflow-content">
+                    <p>Цей текст демонструє overflow: auto. Прокрутка з’являється лише при необхідності. Додамо текст:
+                        Українська мова робить приклади цікавішими! Спробуйте додати більше абзаців або змінити розміри
+                        контейнера, щоб побачити, як з’являються смуги прокрутки.</p>
+                    <p>Додатковий текст: Можна включити описи природи, поради для веб-розробки або навіть приклади коду,
+                        щоб протестувати поведінку контейнера.</p>
+                </div>
+            </div>
+
+       
     </main>
     <footer>
         <p>© 2025 Мій навчальний сайт</p>
     </footer>
 </body>
+
 </html>
