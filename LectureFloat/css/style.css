@@ -1,0 +1,42 @@
+/* p {
+    color: violet;
+} */
+h3{
+    
+    background-color: lightblue;
+}
+.picture{
+ max-width: 400px; /*при такому записи зображ. з великим розширенням будуть приймати значення 400px. зобрачення із шириною меньше 400px не будуть розширюватись до 400, а залишаться у своєму розмірі (уникаємо деформації, втрати якості, частково проблем при адаптивній верстці). */
+
+ /* width: 400px; У верстці взагалі варто уникати жостких/прямих значень ширини, де це можливо! Можна і так вказати. але можемо отримати дефекти у зображеннях, де ширина меньше, отримаємо проблеми при адаптивній верстці, можемо отримати небажані скроли. це стосуеться не тільки зображень. */
+}
+.fl{
+    float: left;
+       /* margin-top: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 0; */
+    margin: 0 15px 15px 0; /*Це той самий запис, що і у коментарі вище. */
+}
+.fr{
+    float: right;
+    margin: 0 0 15px 15px;
+}
+.clearfix:before {
+content: "";
+display: table;
+clear: both;
+}
+/* .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    } */
+
+    /*.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    } */
+
+

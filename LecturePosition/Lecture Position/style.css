@@ -1,0 +1,136 @@
+
+    /* -------------POSITION------------- */
+    .clearfix::before, .clearfix:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .intro-block {
+    background-color: lightgrey;
+    background-image: url(../img/sunset-1920.jpg);
+    padding: 150px 0;
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    
+}
+.intro-heading {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 4px rgb(0 0 0 / 30%);
+    font-weight: 400;
+    /* letter-spacing: 1px; /*расстояние между буквами */
+}
+.container{
+     width: 85%; /*ширина блока від ширини екрана */
+     margin: auto; /*центрування блока */
+    background-color: beige;   
+    position: relative; 
+    min-height: 2000px;
+}
+.square{
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;/*чим більше значення тим вище елемент*/
+}
+.square2{
+    top: 40px;
+    left: 40px;
+    background-color: darkred;
+    z-index: 2;
+}
+.cont1{
+    width: 300px;
+    height: 300px;
+    background-color: cadetblue;
+    position: relative;
+}
+.cont2{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+.cont3{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.relative{
+    position: relative;
+    height: 500px;
+    left: -20px;
+}
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: grey;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 75%; 
+    z-index: 9999; /*щоб ніякий контент не перекрив собою цей елемент*/
+}
+.left-col, .right-col{
+    float: left;
+}
+.left-col{
+    width: 80%;
+}
+.right-col{
+    width: 20%;
+    position: sticky;
+    position: 
+    -webkit-sticky; /*щоб працювало на старих сафарі */
+    top: 0;
+}
+.rectangle{
+    height: 200px;
+    background-color: seagreen;
+    /* top: 0; */
+    
+}
+
+.task2{
+    position: relative;
+}
+.task2-item {
+
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: salmon;
+}
+.task2-item .task2-item{
+    top: 50%;
+    left: 50%;
+}
+.color-violet{
+    background-color: blueviolet;
+}
+.color-green{
+    background-color: forestgreen;
+}
+.color-orange{
+    background-color: orange;
+}
+.sticky-content{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /* padding-top: 75px; */
+}
+
